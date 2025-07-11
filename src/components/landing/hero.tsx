@@ -32,7 +32,7 @@ export function Hero() {
             height="600"
             alt="Hero Robot Mascot"
             className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last transition-transform duration-300 ease-in-out hover:scale-105"
-            data-ai-hint="robot mascot"
+            data-ai-hint="cute robot"
           />
         </div>
       </div>

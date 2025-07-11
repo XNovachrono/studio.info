@@ -48,7 +48,7 @@ export function Calculator() {
                 height="400"
                 alt="Calculator Robot Mascot"
                 className="mx-auto rounded-xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
-                data-ai-hint="robot mascot"
+                data-ai-hint="friendly robot"
             />
             <Card className="shadow-xl">
                 <CardHeader>
