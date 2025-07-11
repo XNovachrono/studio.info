@@ -13,17 +13,31 @@ export function About() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <Card className="shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
-                <CardHeader>
-                    <CardTitle className="font-headline">Nuestra Misión</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                    <p className="text-muted-foreground">
-                        Nuestra misión es transformar la forma en que las personas aprenden inglés, ofreciéndoles un proceso personalizado, humano y funcional que se adapte a sus metas reales. En Uncoverly combinamos tecnología inteligente con docentes apasionados, para que cada estudiante se sienta acompañado, motivado y capaz de hablar inglés con confianza y propósito.
-                    </p>
-                </CardContent>
-            </Card>
+        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col gap-6">
+                <Card className="shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <CardHeader>
+                        <CardTitle className="font-headline">Nuestra Misión</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <p className="text-muted-foreground">
+                            Nuestra misión es transformar la forma en que las personas aprenden inglés, ofreciéndoles un proceso personalizado, humano y funcional que se adapte a sus metas reales. En Uncoverly combinamos tecnología inteligente con docentes apasionados, para que cada estudiante se sienta acompañado, motivado y capaz de hablar inglés con confianza y propósito.
+                        </p>
+                    </CardContent>
+                </Card>
+                <Card className="shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <CardHeader>
+                        <CardTitle className="font-headline">Nuestro estilo</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <p className="text-muted-foreground whitespace-pre-wrap">
+Nuestro método tiene un enfoque dinámico, basado en preguntas para aprender inglés, inspirado en los principios de la mayéutica.
+En lugar de explicar todo de forma tradicional, guiamos a los estudiantes para que descubran y asimilen el idioma a través de preguntas orientadas y participación activa. Este método los invita a interactuar con el vocabulario, la gramática y la pronunciación de manera natural y práctica.
+Al fomentar un diálogo constante, ayudamos a que los estudiantes ganen confianza, desarrollen fluidez y se expresen con más libertad. Incluso cuando no están seguros de algo, siempre cuentan con acompañamiento, dentro de un espacio seguro donde se les anima a experimentar, equivocarse y jugar con el idioma.
+                        </p>
+                    </CardContent>
+                </Card>
+            </div>
           <div className="flex flex-col justify-center space-y-4">
              <h3 className="text-2xl font-bold font-headline tracking-tighter sm:text-3xl">Tu aprendizaje, a tu manera.</h3>
              <p className="text-muted-foreground">
