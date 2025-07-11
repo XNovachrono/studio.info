@@ -15,7 +15,7 @@ const plans = [
     {
         name: 'Clase Grupal',
         description: 'Aprende en un entorno dinámico y social (5-8 estudiantes).',
-        features: ['Interacción con más estudiantes', 'Dinámicas de grupo', 'El plan más económico'],
+        features: ['Interacción con más estudiantes', 'Dinámicas de grupo', 'Ambiente de aprendizaje colaborativo'],
     },
 ]
 
