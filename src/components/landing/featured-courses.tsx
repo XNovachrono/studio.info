@@ -6,7 +6,7 @@ const features = [
   {
     icon: <BookOpen className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
     title: 'Clases en vivo',
-    description: 'En Uncoverly, cada clase es una experiencia real, hecha para ti. Nada de lecciones grabadas o respuestas genéricas. Aquí hablas, escuchas, preguntas y te equivocas sin miedo, porque estás con un profesor que te conoce, te entiende y te acompaña paso a paso en tu proceso.',
+    description: 'En Uncoverly, cada clase es una experiencia real, hecha para ti. Nada de lecciones grabadas o respuestas genéricas. Acá hablas, escuchas, preguntas y te equivocas sin miedo, porque estás con un profe que te conoce, te entiende y te acompaña paso a paso en tu proceso. Tú decides cuándo tomar tus clases. Solo eliges el horario que te funcione y, si está libre, lo agendas. Así de flexible. No importa si estudias, trabajas o tienes poco tiempo: el curso se adapta a tu ritmo, no al revés. Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos pequeños, pero siempre hay espacio para ti. Y lo más importante: el contenido no está escrito de antemano. Se construye contigo, según tus objetivos.',
   },
   {
     icon: <CalendarDays className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
