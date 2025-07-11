@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { BookOpen, CalendarDays, Users } from 'lucide-react';
+import { BookOpen, CalendarDays, Users, Award } from 'lucide-react';
 
 const features = [
   {
