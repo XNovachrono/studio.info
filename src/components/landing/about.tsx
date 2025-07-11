@@ -20,7 +20,7 @@ export function About() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <p className="text-muted-foreground">
-                        Nuestra misión es simple: ofrecer una educación de inglés que se adapte a las necesidades, ritmo y objetivos de cada estudiante. Nos alejamos del modelo tradicional de "talla única" para crear un camino de aprendizaje verdaderamente personalizado.
+                        Nuestra misión es transformar la forma en que las personas aprenden inglés, ofreciéndoles un proceso personalizado, humano y funcional que se adapte a sus metas reales. En Uncoverly combinamos tecnología inteligente con docentes apasionados, para que cada estudiante se sienta acompañado, motivado y capaz de hablar inglés con confianza y propósito.
                     </p>
                     <ul className="space-y-2">
                         <li className="flex items-start">
