@@ -43,7 +43,7 @@ export function Calculator() {
         </div>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
             <Image
-                src="https://placehold.co/600x400.png"
+                src="/images/calculator-robot.png"
                 width="600"
                 height="400"
                 alt="Calculator Robot Mascot"

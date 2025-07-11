@@ -27,7 +27,7 @@ export function Hero() {
             </div>
           </div>
           <Image
-            src="https://placehold.co/600x600.png"
+            src="/images/hero-robot.png"
             width="600"
             height="600"
             alt="Hero Robot Mascot"
