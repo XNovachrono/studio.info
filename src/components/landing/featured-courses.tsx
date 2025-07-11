@@ -1,27 +1,22 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Bot, BrainCircuit, Sparkles } from 'lucide-react';
+import { BookOpen, CalendarDays, Users } from 'lucide-react';
 
 const features = [
   {
-    icon: <BookOpen className="h-8 w-8 text-primary" />,
-    title: 'Clases en Vivo',
-    description: 'Acá no vienes a ver videos grabados ni a seguir un guion genérico. En Uncoverly las clases son en vivo, con profes reales que te hablan, te entienden y te enseñan a tu ritmo. Son conversaciones, no monólogos. Te escuchamos, corregimos y celebramos cada avance contigo. Esto es aprendizaje real, no un tutorial más.',
+    icon: <BookOpen className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
+    title: 'Experiencia Real y Personalizada',
+    description: 'En Uncoverly, cada clase es una experiencia real, hecha para ti. Nada de lecciones grabadas o respuestas genéricas. Aquí hablas, escuchas, preguntas y te equivocas sin miedo, porque estás con un profesor que te conoce, te entiende y te acompaña paso a paso en tu proceso.',
   },
   {
-    icon: <Bot className="h-8 w-8 text-primary" />,
-    title: 'Recursos Innovadores',
-    description: 'Usamos la tecnología para hacer que el proceso sea más humano, no al revés. Cada clase queda grabada para que la repases cuando quieras, con transcripción automática. La IA te sugiere ejercicios según tus errores y avances, y todo lo que usamos está diseñado para que tú tengas el control. Nada se desperdicia. Cada recurso suma.',
+    icon: <CalendarDays className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
+    title: 'Flexibilidad Total',
+    description: 'Tú decides cuándo tomar tus clases. Solo eliges el horario que te funcione y, si está libre, lo agendas. Así de flexible. No importa si estudias, trabajas o tienes poco tiempo: el curso se adapta a tu ritmo, no al revés.',
   },
   {
-    icon: <BrainCircuit className="h-8 w-8 text-primary" />,
-    title: 'Aprendizaje Efectivo',
-    description: '¿De qué sirve saber inglés si no puedes usarlo en tu vida? Aquí todo gira alrededor de tus objetivos. Te enseñamos justo lo que necesitas, con ejercicios hechos para ti, sin rellenar con lo que no aplica. Aprendes con intención. Y se nota.',
-  },
-  {
-    icon: <Sparkles className="h-8 w-8 text-primary" />,
-    title: 'Aprender con ganas',
-    description: 'El inglés no tiene por qué sentirse como una materia más. En Uncoverly queremos que te conectes con lo que aprendes, que disfrutes cada clase. Hablamos de temas que te interesan, usamos dinámicas reales, y le metemos alma a todo. Aprender así no solo funciona... también dan ganas de seguir.',
+    icon: <Users className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
+    title: 'A tu Medida y Objetivos',
+    description: 'Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos pequeños, pero siempre hay espacio para ti. Y lo más importante: el contenido no está escrito de antemano. Se construye contigo, según tus objetivos.',
   },
 ];
 
@@ -32,7 +27,7 @@ export function FeaturedCourses() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6 flex flex-col justify-center">
             <h2 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl md:text-6xl">
-              Aprendizaje a tu medida
+              Clases en vivo, a tu medida
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
               Explora nuestros cursos diseñados para adaptarse a tus necesidades. Aprende de forma interactiva y divertida, con profesores nativos y recursos innovadores que potenciarán tu aprendizaje.
@@ -47,8 +42,8 @@ export function FeaturedCourses() {
           </div>
           <div className="flex flex-col gap-8">
             {features.map((feature) => (
-              <div key={feature.title} className="flex items-start gap-6 p-6 bg-card rounded-lg shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
-                <div className="p-3 bg-accent/20 rounded-full transition-transform duration-300 hover:scale-110">
+              <div key={feature.title} className="group flex items-start gap-6 p-6 bg-card rounded-lg shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+                <div className="p-3 bg-accent/20 rounded-full">
                   {feature.icon}
                 </div>
                 <div className="flex-1">
