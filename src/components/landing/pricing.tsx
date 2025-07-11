@@ -3,9 +3,9 @@ import { Check } from 'lucide-react';
 
 const plans = [
     {
-        name: 'Clase Grupal',
+        name: 'Grupo grande',
         price: '$50.000 COP/clase',
-        description: 'Aprende en un entorno dinámico y social (5-8 estudiantes).',
+        description: 'Aprende en un entorno dinámico y social (5-6 estudiantes).',
         features: ['Interacción con más estudiantes', 'Dinámicas de grupo', 'Ambiente de aprendizaje colaborativo'],
     },
     {
