@@ -33,7 +33,11 @@ Y como cada clase es personalizada, no hay relleno. Cada minuto cuenta. Saldrás
   {
     icon: <Award className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
     title: '#aprenderconganas',
-    description: 'Con Uncoverly, no solo aprendes un idioma, descubres tu potencial. Te damos las herramientas y el apoyo para que te comuniques con confianza en cualquier situación.',
+    description: `En Uncoverly queremos que aprender inglés te guste, te enganche y te dé ganas de seguir. Las clases son dinámicas, con juegos, retos, conversaciones reales y ejercicios que conectan contigo. Aquí no vienes a repetir cosas de memoria, sino a vivir el idioma.
+
+Nuestros profes enseñan con el corazón. Se nota en cómo explican, en cómo se adaptan a ti y en cómo celebran tus avances. Esto no es una clase fría de colegio: es un espacio donde te sientes cómodo, acompañado y escuchado.
+
+Y sí, aprendés en serio. Pero también te ríes, conectas y te sorprendes con lo que eres capaz de lograr. Porque cuando el proceso te gusta, el progreso llega solo. Esa es la diferencia de aprender con ganas.`,
   },
 ];
 
