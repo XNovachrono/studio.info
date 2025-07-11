@@ -11,7 +11,7 @@ export function Header() {
 
   const navLinks = [
     { href: '#about', label: 'Sobre Nosotros' },
-    { href: '#courses', label: 'Cursos' },
+    { href: '#courses', label: 'Curso' },
     { href: '#pricing', label: 'Precios' },
     { href: '#calculator', label: 'Calculadora' },
   ];
