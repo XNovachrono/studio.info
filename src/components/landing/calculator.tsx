@@ -69,7 +69,7 @@ export function Calculator() {
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="group" id="group" />
-                                <Label htmlFor="group">Grupal</Label>
+                                <Label htmlFor="group">Grupo grande</Label>
                             </div>
                         </RadioGroup>
                     </div>
