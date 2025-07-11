@@ -5,18 +5,23 @@ import { BookOpen, CalendarDays, Users, Award } from 'lucide-react';
 const features = [
   {
     icon: <BookOpen className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
-    title: 'Experiencia Real y Personalizada',
+    title: 'Clases en vivo',
     description: 'En Uncoverly, cada clase es una experiencia real, hecha para ti. Nada de lecciones grabadas o respuestas genéricas. Aquí hablas, escuchas, preguntas y te equivocas sin miedo, porque estás con un profesor que te conoce, te entiende y te acompaña paso a paso en tu proceso.',
   },
   {
     icon: <CalendarDays className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
-    title: 'Flexibilidad Total',
+    title: 'Recursos innovadores',
     description: 'Tú decides cuándo tomar tus clases. Solo eliges el horario que te funcione y, si está libre, lo agendas. Así de flexible. No importa si estudias, trabajas o tienes poco tiempo: el curso se adapta a tu ritmo, no al revés.',
   },
   {
     icon: <Users className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
-    title: 'A tu Medida y Objetivos',
+    title: 'Aprendizaje efectivo',
     description: 'Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos pequeños, pero siempre hay espacio para ti. Y lo más importante: el contenido no está escrito de antemano. Se construye contigo, según tus objetivos.',
+  },
+  {
+    icon: <Award className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
+    title: '#aprenderconganas',
+    description: 'Con Uncoverly, no solo aprendes un idioma, descubres tu potencial. Te damos las herramientas y el apoyo para que te comuniques con confianza en cualquier situación.',
   },
 ];
 
