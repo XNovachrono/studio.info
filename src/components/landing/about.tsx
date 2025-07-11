@@ -22,20 +22,6 @@ export function About() {
                     <p className="text-muted-foreground">
                         Nuestra misión es transformar la forma en que las personas aprenden inglés, ofreciéndoles un proceso personalizado, humano y funcional que se adapte a sus metas reales. En Uncoverly combinamos tecnología inteligente con docentes apasionados, para que cada estudiante se sienta acompañado, motivado y capaz de hablar inglés con confianza y propósito.
                     </p>
-                    <ul className="space-y-2">
-                        <li className="flex items-start">
-                            <CheckCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                            <span>Clases personalizadas según tus intereses y metas profesionales.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                            <span>Horarios flexibles que se acomodan a tu estilo de vida.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                            <span>Profesores dedicados a tu progreso y éxito.</span>
-                        </li>
-                    </ul>
                 </CardContent>
             </Card>
           <div className="flex flex-col justify-center space-y-4">
@@ -43,6 +29,20 @@ export function About() {
              <p className="text-muted-foreground">
                 Con Uncoverly, no solo aprendes un idioma, descubres tu potencial. Te damos las herramientas y el apoyo para que te comuniques con confianza en cualquier situación.
              </p>
+             <ul className="space-y-4 pt-4">
+                <li className="flex items-start">
+                    <CheckCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                    <span>Clases personalizadas según tus intereses y metas profesionales.</span>
+                </li>
+                <li className="flex items-start">
+                    <CheckCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                    <span>Horarios flexibles que se acomodan a tu estilo de vida.</span>
+                </li>
+                <li className="flex items-start">
+                    <CheckCircle className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                    <span>Profesores dedicados a tu progreso y éxito.</span>
+                </li>
+            </ul>
           </div>
         </div>
       </div>
