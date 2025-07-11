@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { BookOpen, CalendarDays, Users, Award } from 'lucide-react';
+import { BookOpen, CalendarDays, Target, Award } from 'lucide-react';
 
 const features = [
   {
@@ -22,9 +22,13 @@ Cada sesión en vivo queda grabada automáticamente y se transcribe en texto en 
 Aquí la tecnología no sustituye el trabajo humano. Lo complementa. Cada herramienta que usamos está pensada para que tu proceso sea más claro, más eficiente y adaptado a ti, sin perder lo más importante: el acompañamiento real de alguien que te escucha y te guía.`,
   },
   {
-    icon: <Users className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
-    title: 'Aprendizaje efectivo',
-    description: 'Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos pequeños, pero siempre hay espacio para ti. Y lo más importante: el contenido no está escrito de antemano. Se construye contigo, según tus objetivos.',
+    icon: <Target className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
+    title: '🎯 Aprendizaje funcional, con propósito',
+    description: `Acá no aprendes inglés solo por aprenderlo. Lo usas desde el primer día con intención. Todo el contenido se adapta a lo que quieres lograr: viajar, estudiar, trabajar o simplemente sentirte más seguro al comunicarte. No enseñamos lo mismo a todos, enseñamos lo que tú necesitas.
+
+Las clases se centran en resolver situaciones reales. ¿Vas a tener una entrevista? ¿Trabajas en cocina? ¿Quieres mejorar tu pronunciación al hablar con clientes? Podemos enfocarnos en eso. No se trata de seguir un libro. Se trata de que el idioma te sea útil en la vida real.
+
+Y como cada clase es personalizada, no hay relleno. Cada minuto cuenta. Saldrás con herramientas concretas para avanzar, no solo con teoría. Porque aprender con propósito se nota… y se disfruta más.`,
   },
   {
     icon: <Award className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
