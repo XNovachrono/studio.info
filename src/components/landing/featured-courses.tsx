@@ -1,20 +1,31 @@
 import Link from 'next/link';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { Star, AtSign, Users, Mail } from 'lucide-react';
 
-const courses = [
+const features = [
   {
-    title: 'Inglés de Negocios',
-    description: 'Domina el lenguaje del mundo corporativo. Ideal para profesionales que buscan expandir sus horizontes.',
+    icon: <Star className="h-8 w-8 text-primary" />,
+    title: 'Clases en Vivo',
+    description: 'Participa en lecciones dinámicas e interactivas con profesores expertos en tiempo real.',
+    link: '#pricing',
   },
   {
-    title: 'Preparación para Exámenes',
-    description: 'Alcanza el puntaje que necesitas en exámenes como TOEFL, IELTS y Cambridge con nuestra preparación enfocada.',
+    icon: <AtSign className="h-8 w-8 text-primary" />,
+    title: 'Recursos Innovadores',
+    description: 'Accede a herramientas de aprendizaje de última generación y materiales exclusivos.',
+    link: '#pricing',
   },
   {
-    title: 'Inglés Conversacional',
-    description: 'Gana fluidez y confianza para hablar en situaciones cotidianas. Pierde el miedo a cometer errores.',
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: 'Aprendizaje Efectivo',
+    description: 'Nuestro método se enfoca en tus necesidades para garantizar un progreso rápido y sólido.',
+    link: '#pricing',
+  },
+  {
+    icon: <Mail className="h-8 w-8 text-primary" />,
+    title: 'Diversión Garantizada',
+    description: 'Aprender un nuevo idioma nunca fue tan entretenido y motivador.',
+    link: '#pricing',
   },
 ];
 
@@ -22,31 +33,38 @@ export function FeaturedCourses() {
   return (
     <section id="courses" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-5xl">Cursos Destacados</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Programas diseñados para cumplir tus objetivos específicos.
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl md:text-5xl">
+              Nuestros Cursos Destacados
+            </h2>
+            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+              Explora nuestra amplia selección de cursos de idiomas diseñados para adaptarse a tus necesidades y horarios. Aprende de forma interactiva y divertida, con profesores nativos y recursos innovadores que potenciarán tu aprendizaje.
             </p>
+            <Button asChild size="lg" variant="outline">
+              <Link href="#pricing">
+                Descubre
+              </Link>
+            </Button>
           </div>
-        </div>
-        <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
-          {courses.map((course) => (
-            <Card key={course.title} className="flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="font-headline">{course.title}</CardTitle>
-                <CardDescription>{course.description}</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <Button asChild variant="link" className="p-0 h-auto">
-                    <Link href="#pricing">
-                        Descubre
-                        <ArrowRight className="ml-2 h-4 w-4" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {features.map((feature) => (
+              <div key={feature.title} className="flex flex-col items-start space-y-3">
+                <div className="bg-primary/10 p-3 rounded-full">
+                    {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold font-headline">{feature.title}</h3>
+                <p className="text-muted-foreground">
+                  {feature.description}
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto text-primary">
+                    <Link href={feature.link}>
+                        Show More
                     </Link>
                 </Button>
-              </CardFooter>
-            </Card>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
