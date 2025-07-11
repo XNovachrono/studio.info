@@ -15,11 +15,7 @@ Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos
   {
     icon: <CalendarDays className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
     title: 'Recursos innovadores',
-    description: `En Uncoverly, la tecnología no es un extra: es parte de la experiencia. Usamos inteligencia artificial para que cada clase tenga seguimiento real, con sugerencias de ejercicios hechos a tu medida según tus avances y dificultades. 
-
-Cada sesión en vivo queda grabada automáticamente y se transcribe en texto en tiempo real. Puedes repasar todo lo que se dijo, volver a escuchar explicaciones y estudiar a tu ritmo, cuando quieras sin perder ningún detalle. Serás consciente de todo tu progreso.
-
-Aquí la tecnología no sustituye el trabajo humano. Lo complementa. Cada herramienta que usamos está pensada para que tu proceso sea más claro, más eficiente y adaptado a ti, sin perder lo más importante: el acompañamiento real de alguien que te escucha y te guía.`,
+    description: `En Uncoverly, la tecnología no es un extra: es parte de la experiencia. Usamos inteligencia artificial para que cada clase tenga seguimiento real, con sugerencias de ejercicios hechos a tu medida según tus avances y dificultades. Cada sesión en vivo queda grabada automáticamente y se transcribe en texto en tiempo real. Puedes repasar todo lo que se dijo, volver a escuchar explicaciones y estudiar a tu ritmo, cuando quieras sin perder ningún detalle. Serás consciente de todo tu progreso. Aquí la tecnología no sustituye el trabajo humano. Lo complementa. Cada herramienta que usamos está pensada para que tu proceso sea más claro, más eficiente y adaptado a ti, sin perder lo más importante: el acompañamiento real de alguien que te escucha y te guía.`,
   },
   {
     icon: <Users className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
