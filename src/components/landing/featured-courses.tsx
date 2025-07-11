@@ -6,12 +6,20 @@ const features = [
   {
     icon: <BookOpen className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
     title: 'Clases en vivo',
-    description: 'En Uncoverly, cada clase es una experiencia real, hecha para ti. Aquí hablas, escuchas, preguntas y te equivocas sin miedo. Tú decides cuándo tomar tus clases. No importa si estudias, trabajas o tienes poco tiempo: el curso se adapta a tu ritmo, no al revés. Agenda cuando gustes. Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos pequeños, pero siempre hay espacio para ti. Y lo más importante: el contenido no está escrito de antemano, se construye contigo según tus objetivos.',
+    description: `En Uncoverly, cada clase es una experiencia real, hecha para ti. Aquí hablas, escuchas, preguntas y te equivocas sin miedo
+
+Tú decides cuándo tomar tus clases. No importa si estudias, trabajas o tienes poco tiempo: el curso se adapta a tu ritmo, no al revés. Agenda cuando gustes
+
+Las clases no son masivas ni frías. Pueden ser uno a uno, en pareja o en grupos pequeños, pero siempre hay espacio para ti. Y lo más importante: el contenido no está escrito de antemano, se construye contigo según tus objetivos.`,
   },
   {
     icon: <CalendarDays className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
     title: 'Recursos innovadores',
-    description: 'Tú decides cuándo tomar tus clases. Solo eliges el horario que te funcione y, si está libre, lo agendas. Así de flexible. No importa si estudias, trabajas o tienes poco tiempo: el curso se adapta a tu ritmo, no al revés.',
+    description: `En Uncoverly, la tecnología no es un extra: es parte de la experiencia. Usamos inteligencia artificial para que cada clase tenga seguimiento real, con sugerencias de ejercicios hechos a tu medida según tus avances y dificultades. 
+
+Cada sesión en vivo queda grabada automáticamente y se transcribe en texto en tiempo real. Puedes repasar todo lo que se dijo, volver a escuchar explicaciones y estudiar a tu ritmo, cuando quieras sin perder ningún detalle. Serás consciente de todo tu progreso.
+
+Aquí la tecnología no sustituye el trabajo humano. Lo complementa. Cada herramienta que usamos está pensada para que tu proceso sea más claro, más eficiente y adaptado a ti, sin perder lo más importante: el acompañamiento real de alguien que te escucha y te guía.`,
   },
   {
     icon: <Users className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
