@@ -1,70 +1,74 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Star, AtSign, Users, Mail } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { BookOpen, Users, BarChart3, TrendingUp } from 'lucide-react';
+import { Progress } from '@/components/ui/progress';
 
-const features = [
+const courses = [
   {
-    icon: <Star className="h-8 w-8 text-primary" />,
-    title: 'Clases en Vivo',
-    description: 'Participa en lecciones dinámicas e interactivas con profesores expertos en tiempo real.',
+    icon: <BookOpen className="h-6 w-6 text-primary" />,
+    title: 'Inglés para Principiantes',
+    level: 'Nivel: A1',
+    progress: 30,
     link: '#pricing',
   },
   {
-    icon: <AtSign className="h-8 w-8 text-primary" />,
-    title: 'Recursos Innovadores',
-    description: 'Accede a herramientas de aprendizaje de última generación y materiales exclusivos.',
+    icon: <Users className="h-6 w-6 text-primary" />,
+    title: 'Inglés de Negocios',
+    level: 'Nivel: B2',
+    progress: 65,
     link: '#pricing',
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
-    title: 'Aprendizaje Efectivo',
-    description: 'Nuestro método se enfoca en tus necesidades para garantizar un progreso rápido y sólido.',
+    icon: <BarChart3 className="h-6 w-6 text-primary" />,
+    title: 'Preparación para TOEFL',
+    level: 'Nivel: C1',
+    progress: 80,
     link: '#pricing',
   },
   {
-    icon: <Mail className="h-8 w-8 text-primary" />,
-    title: 'Diversión Garantizada',
-    description: 'Aprender un nuevo idioma nunca fue tan entretenido y motivador.',
+    icon: <TrendingUp className="h-6 w-6 text-primary" />,
+    title: 'Inglés Conversacional',
+    level: 'Todos los niveles',
+    progress: 50,
     link: '#pricing',
   },
 ];
 
 export function FeaturedCourses() {
   return (
-    <section id="courses" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section id="courses" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/30">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl md:text-5xl">
-              Nuestros Cursos Destacados
+        <div className="flex flex-col items-start justify-center space-y-4 mb-12">
+            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-5xl">
+              Nuestros Cursos
             </h2>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-              Explora nuestra amplia selección de cursos de idiomas diseñados para adaptarse a tus necesidades y horarios. Aprende de forma interactiva y divertida, con profesores nativos y recursos innovadores que potenciarán tu aprendizaje.
+            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Elige el camino que te llevará a la fluidez. Cursos diseñados para cada necesidad y objetivo.
             </p>
-            <Button asChild size="lg" variant="outline">
-              <Link href="#pricing">
-                Descubre
-              </Link>
-            </Button>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {features.map((feature) => (
-              <div key={feature.title} className="flex flex-col items-start space-y-3">
-                <div className="bg-primary/10 p-3 rounded-full">
-                    {feature.icon}
-                </div>
-                <h3 className="text-xl font-bold font-headline">{feature.title}</h3>
-                <p className="text-muted-foreground">
-                  {feature.description}
-                </p>
-                <Button asChild variant="link" className="p-0 h-auto text-primary">
-                    <Link href={feature.link}>
-                        Show More
-                    </Link>
-                </Button>
-              </div>
-            ))}
-          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {courses.map((course) => (
+            <Card key={course.title} className="shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                        <div className="bg-primary/10 p-3 rounded-lg">
+                            {course.icon}
+                        </div>
+                        <div className='flex-1'>
+                            <h3 className="text-lg font-bold font-headline mb-1">{course.title}</h3>
+                            <p className="text-sm text-muted-foreground mb-4">{course.level}</p>
+                            <Progress value={course.progress} className="h-2 mb-4" />
+                            <Button asChild variant="secondary" size="sm" className="w-full md:w-auto">
+                                <Link href={course.link}>
+                                    Ver curso
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
