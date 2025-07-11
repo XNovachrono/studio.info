@@ -6,17 +6,28 @@ import { Pricing } from "@/components/landing/pricing";
 import { Calculator } from "@/components/landing/calculator";
 import { WhatsAppButton } from "@/components/landing/whatsapp-button";
 import { Footer } from "@/components/landing/footer";
+import { ScrollAnimator } from "@/components/scroll-animator";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col">
+    <div className="flex min-h-screen w-full flex-col overflow-x-hidden">
       <Header />
       <main className="flex-1">
-        <Hero />
-        <About />
-        <FeaturedCourses />
-        <Pricing />
-        <Calculator />
+        <ScrollAnimator>
+          <Hero />
+        </ScrollAnimator>
+        <ScrollAnimator>
+          <About />
+        </ScrollAnimator>
+        <ScrollAnimator>
+          <FeaturedCourses />
+        </ScrollAnimator>
+        <ScrollAnimator>
+          <Pricing />
+        </ScrollAnimator>
+        <ScrollAnimator>
+          <Calculator />
+        </ScrollAnimator>
       </main>
       <Footer />
       <WhatsAppButton />
