@@ -38,7 +38,7 @@ export function Calculator() {
                 width="600"
                 height="400"
                 alt="Calculator Robot Mascot"
-                className="mx-auto rounded-xl object-cover"
+                className="mx-auto rounded-xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 data-ai-hint="robot mascot"
             />
             <Card className="shadow-xl">

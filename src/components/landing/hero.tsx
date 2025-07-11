@@ -31,7 +31,7 @@ export function Hero() {
             width="600"
             height="600"
             alt="Hero Robot Mascot"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last transition-transform duration-300 ease-in-out hover:scale-105"
             data-ai-hint="robot mascot"
           />
         </div>
