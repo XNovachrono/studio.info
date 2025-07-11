@@ -23,7 +23,7 @@ Aquí la tecnología no sustituye el trabajo humano. Lo complementa. Cada herram
   },
   {
     icon: <Target className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />,
-    title: '🎯 Aprendizaje funcional, con propósito',
+    title: 'Aprendizaje funcional, con propósito',
     description: `Acá no aprendes inglés solo por aprenderlo. Lo usas desde el primer día con intención. Todo el contenido se adapta a lo que quieres lograr: viajar, estudiar, trabajar o simplemente sentirte más seguro al comunicarte. No enseñamos lo mismo a todos, enseñamos lo que tú necesitas.
 
 Las clases se centran en resolver situaciones reales. ¿Vas a tener una entrevista? ¿Trabajas en cocina? ¿Quieres mejorar tu pronunciación al hablar con clientes? Podemos enfocarnos en eso. No se trata de seguir un libro. Se trata de que el idioma te sea útil en la vida real.
