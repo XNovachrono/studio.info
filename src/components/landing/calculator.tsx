@@ -8,9 +8,9 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Slider } from '@/components/ui/slider';
 
 const prices = {
-  private: 50,
-  small_group: 30,
-  group: 20,
+  private: 100000,
+  small_group: 83300,
+  group: 50000,
 };
 
 type ClassType = keyof typeof prices;
@@ -22,6 +22,15 @@ export function Calculator() {
   const monthlyCost = useMemo(() => {
     return prices[classType] * frequency * 4; // Assuming 4 weeks per month
   }, [classType, frequency]);
+
+  const formattedCost = useMemo(() => {
+    return new Intl.NumberFormat('es-CO', {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+    }).format(monthlyCost);
+  }, [monthlyCost]);
 
   return (
     <section id="calculator" className="w-full py-12 md:py-24 lg:py-32 bg-background">
@@ -80,7 +89,7 @@ export function Calculator() {
                     </div>
                     <div className="text-center bg-accent/30 p-6 rounded-lg">
                         <p className="text-lg text-muted-foreground">Costo mensual estimado:</p>
-                        <p className="text-4xl font-bold font-headline text-primary">${monthlyCost}</p>
+                        <p className="text-4xl font-bold font-headline text-primary">{formattedCost}</p>
                     </div>
                 </CardContent>
             </Card>

@@ -4,19 +4,19 @@ import { Check } from 'lucide-react';
 const plans = [
     {
         name: 'Clase Privada',
-        price: '$50/clase',
+        price: '$100.000 COP/clase',
         description: 'Atención 100% personalizada para un avance acelerado.',
         features: ['Plan de estudios a medida', 'Máxima flexibilidad de horarios', 'Feedback individualizado'],
     },
     {
         name: 'Grupo Pequeño',
-        price: '$30/clase',
+        price: '$83.300 COP/clase',
         description: 'El equilibrio perfecto entre interacción y atención personal (2-4 estudiantes).',
         features: ['Práctica conversacional', 'Aprendizaje colaborativo', 'Feedback personalizado'],
     },
     {
         name: 'Clase Grupal',
-        price: '$20/clase',
+        price: '$50.000 COP/clase',
         description: 'Aprende en un entorno dinámico y social (5-8 estudiantes).',
         features: ['Interacción con más estudiantes', 'Dinámicas de grupo', 'Ambiente de aprendizaje colaborativo'],
     },
