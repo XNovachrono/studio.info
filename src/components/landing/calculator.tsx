@@ -94,6 +94,14 @@ export function Calculator() {
                 </CardContent>
             </Card>
         </div>
+        <div className="max-w-3xl mx-auto pt-8">
+            <p className="text-sm text-muted-foreground">
+                <strong>¿Cómo funciona?</strong> La calculadora multiplica el precio de la clase que elegiste por la cantidad de clases que quieres ver a la semana y luego por cuatro (que son las semanas del mes). Así, obtienes un valor aproximado de lo que pagarías mensualmente.
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+                <strong>¿Qué significa este valor?</strong> Es un estimado de tu inversión para que te hagas una idea. El valor final puede ajustarse a tus necesidades específicas.
+            </p>
+        </div>
       </div>
     </section>
   );
