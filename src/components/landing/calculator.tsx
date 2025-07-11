@@ -52,15 +52,15 @@ export function Calculator() {
                         <RadioGroup defaultValue="private" onValueChange={(value: ClassType) => setClassType(value)}>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="private" id="private" />
-                                <Label htmlFor="private">Privada ($50/clase)</Label>
+                                <Label htmlFor="private">Privada</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="small_group" id="small_group" />
-                                <Label htmlFor="small_group">Grupo Pequeño ($30/clase)</Label>
+                                <Label htmlFor="small_group">Grupo Pequeño</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="group" id="group" />
-                                <Label htmlFor="group">Grupal ($20/clase)</Label>
+                                <Label htmlFor="group">Grupal</Label>
                             </div>
                         </RadioGroup>
                     </div>

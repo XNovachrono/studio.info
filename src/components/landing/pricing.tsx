@@ -4,16 +4,19 @@ import { Check } from 'lucide-react';
 const plans = [
     {
         name: 'Clase Privada',
+        price: '$50/clase',
         description: 'Atención 100% personalizada para un avance acelerado.',
         features: ['Plan de estudios a medida', 'Máxima flexibilidad de horarios', 'Feedback individualizado'],
     },
     {
         name: 'Grupo Pequeño',
+        price: '$30/clase',
         description: 'El equilibrio perfecto entre interacción y atención personal (2-4 estudiantes).',
         features: ['Práctica conversacional', 'Aprendizaje colaborativo', 'Feedback personalizado'],
     },
     {
         name: 'Clase Grupal',
+        price: '$20/clase',
         description: 'Aprende en un entorno dinámico y social (5-8 estudiantes).',
         features: ['Interacción con más estudiantes', 'Dinámicas de grupo', 'Ambiente de aprendizaje colaborativo'],
     },
@@ -35,7 +38,10 @@ export function Pricing() {
           {plans.map((plan) => (
              <Card key={plan.name} className="flex flex-col h-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
                 <CardHeader>
-                    <CardTitle className="font-headline">{plan.name}</CardTitle>
+                    <div className="flex justify-between items-baseline">
+                        <CardTitle className="font-headline">{plan.name}</CardTitle>
+                        <p className="text-xl font-bold text-primary">{plan.price}</p>
+                    </div>
                     <CardDescription>{plan.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
