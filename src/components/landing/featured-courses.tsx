@@ -48,10 +48,10 @@ export function FeaturedCourses() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6 flex flex-col justify-center">
             <h2 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl md:text-6xl">
-              Tu aprendizaje, a tu medida
+              ¿Cómo es estar en Uncoverly?
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-              Explora nuestros cursos diseñados para adaptarse a tus necesidades. Aprende de forma interactiva y divertida, con profesores nativos y recursos innovadores que potenciarán tu aprendizaje.
+              Explora nuestros cursos diseñados para adaptarse a tus necesidades. Aprende de forma interactiva y divertida, con profesores y recursos innovadores que potenciarán tu aprendizaje.
             </p>
             <div className="flex">
                 <Button asChild size="lg">
