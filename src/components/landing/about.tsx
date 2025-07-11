@@ -14,7 +14,7 @@ export function About() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <Card className="shadow-lg">
+            <Card className="shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
                 <CardHeader>
                     <CardTitle className="font-headline">Nuestra Misión</CardTitle>
                 </CardHeader>

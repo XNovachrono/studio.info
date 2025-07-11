@@ -33,7 +33,7 @@ export function Pricing() {
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-1 md:grid-cols-3">
           {plans.map((plan) => (
-             <Card key={plan.name} className="flex flex-col h-full shadow-lg hover:shadow-2xl transition-shadow duration-300">
+             <Card key={plan.name} className="flex flex-col h-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
                 <CardHeader>
                     <CardTitle className="font-headline">{plan.name}</CardTitle>
                     <CardDescription>{plan.description}</CardDescription>
