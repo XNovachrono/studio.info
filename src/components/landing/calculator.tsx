@@ -60,16 +60,16 @@ export function Calculator() {
                         <Label className="text-lg font-medium">1. Elige el tipo de clase</Label>
                         <RadioGroup defaultValue="private" onValueChange={(value: ClassType) => setClassType(value)}>
                             <div className="flex items-center space-x-2">
-                                <RadioGroupItem value="private" id="private" />
-                                <Label htmlFor="private">Privada</Label>
+                                <RadioGroupItem value="group" id="group" />
+                                <Label htmlFor="group">Grupo grande</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="small_group" id="small_group" />
                                 <Label htmlFor="small_group">Grupo Pequeño</Label>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <RadioGroupItem value="group" id="group" />
-                                <Label htmlFor="group">Grupo grande</Label>
+                                <RadioGroupItem value="private" id="private" />
+                                <Label htmlFor="private">Privada</Label>
                             </div>
                         </RadioGroup>
                     </div>
@@ -99,7 +99,7 @@ export function Calculator() {
                 <strong>¿Cómo funciona?</strong> La calculadora multiplica el precio de la clase que elegiste por la cantidad de clases que quieres ver a la semana y luego por cuatro (que son las semanas del mes). Así, obtienes un valor aproximado de lo que pagarías mensualmente.
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-                <strong>¿Qué significa este valor?</strong> Es un estimado de tu inversión para que te hagas una idea. El valor final puede ajustarse a tus necesidades específicas.
+                <strong>¿Qué significa este valor?</strong> Es un estimado de tu inversión para que te hagas una idea. El valor final puede ajustarse a tus necesidades específicas. No olvides consultar con un asesor si hay descuentos o promociones disponibles este mes.
             </p>
         </div>
       </div>
