@@ -45,16 +45,18 @@ export function FeaturedCourses() {
                 </Button>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="flex flex-col gap-8">
             {features.map((feature) => (
-              <div key={feature.title} className="flex flex-col items-start p-6 bg-card rounded-lg shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
-                <div className="p-3 bg-accent/20 rounded-full mb-4 transition-transform duration-300 hover:scale-110">
+              <div key={feature.title} className="flex items-start gap-6 p-6 bg-card rounded-lg shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div className="p-3 bg-accent/20 rounded-full transition-transform duration-300 hover:scale-110">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">
-                  {feature.description}
-                </p>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
+                  <p className="text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
