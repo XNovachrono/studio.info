@@ -58,7 +58,7 @@ export function Pricing() {
           ))}
         </div>
         <div className="text-center">
-            <p className="text-muted-foreground">Usa nuestra calculadora para ver el costo mensual.</p>
+            <p className="text-muted-foreground">Recuerda que siempre tendrás una primera clase gratuita. ¡Aprovéchala!</p>
         </div>
       </div>
     </section>
