@@ -14,7 +14,7 @@ export function Header() {
     { href: '#about', label: 'Sobre Nosotros' },
     { href: '#courses', label: 'Curso' },
     { href: '#pricing', label: 'Precios' },
-    { href: '#calculator', label: 'Calculadora' },
+    { href: '#advisors', label: 'Asesores' },
   ];
 
   return (

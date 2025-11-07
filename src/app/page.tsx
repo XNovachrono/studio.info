@@ -3,7 +3,7 @@ import { Hero } from "@/components/landing/hero";
 import { About } from "@/components/landing/about";
 import { FeaturedCourses } from "@/components/landing/featured-courses";
 import { Pricing } from "@/components/landing/pricing";
-import { Calculator } from "@/components/landing/calculator";
+import { Contact } from "@/components/landing/contact";
 import { WhatsAppButton } from "@/components/landing/whatsapp-button";
 import { Footer } from "@/components/landing/footer";
 import { ScrollAnimator } from "@/components/scroll-animator";
@@ -26,7 +26,7 @@ export default function Home() {
           <Pricing />
         </ScrollAnimator>
         <ScrollAnimator>
-          <Calculator />
+          <Contact />
         </ScrollAnimator>
       </main>
       <Footer />
