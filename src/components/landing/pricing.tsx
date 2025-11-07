@@ -38,10 +38,7 @@ export function Pricing() {
           {plans.map((plan) => (
              <Card key={plan.name} className="flex flex-col h-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
                 <CardHeader>
-                    <div className="flex justify-between items-baseline">
-                        <CardTitle className="font-headline">{plan.name}</CardTitle>
-                        <p className="text-xl font-bold text-primary">{plan.price}</p>
-                    </div>
+                    <CardTitle className="font-headline">{plan.name}</CardTitle>
                     <CardDescription>{plan.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
