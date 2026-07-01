@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { User } from 'lucide-react';
+import { withBasePath } from '@/lib/utils';
 
 const advisors = [
     { name: "Asesor 1", phone: "1234567890" }, // TODO: Replace with actual number
@@ -17,7 +18,7 @@ export function Contact() {
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
             <Image
-                src="/images/calculator-robot.png"
+                src={withBasePath('/images/calculator-robot.png')}
                 width="600"
                 height="400"
                 alt="Friendly Robot Mascot"

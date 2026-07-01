@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Share2, Youtube } from 'lucide-react';
+import { withBasePath } from '@/lib/utils';
 
 const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -74,7 +75,7 @@ export function Hero() {
             </div>
           </div>
           <Image
-            src="/images/hero-robot.png"
+            src={withBasePath('/images/hero-robot.png')}
             width="600"
             height="600"
             alt="Hero Robot Mascot"

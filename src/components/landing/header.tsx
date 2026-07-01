@@ -6,6 +6,7 @@ import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { withBasePath } from '@/lib/utils';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/images/logo.png" alt="Uncoverly Logo" width={28} height={28} className="h-7 w-7" />
+            <Image src={withBasePath('/images/logo.png')} alt="Uncoverly Logo" width={28} height={28} className="h-7 w-7" />
             <span className="font-bold font-headline sm:inline-block">
               Uncoverly
             </span>
@@ -47,7 +48,7 @@ export function Header() {
             <SheetContent side="left">
               <div className="flex flex-col p-4">
                 <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Image src="/images/logo.png" alt="Uncoverly Logo" width={28} height={28} className="h-7 w-7" />
+                  <Image src={withBasePath('/images/logo.png')} alt="Uncoverly Logo" width={28} height={28} className="h-7 w-7" />
                   <span className="font-bold font-headline">Uncoverly</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
